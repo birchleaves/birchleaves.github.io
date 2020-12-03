@@ -1,4 +1,3 @@
 This is a dictionary for coding languages.
 
-The name format shall be:
-name-of-file;username
+The name format shall be: NameOfPage.html
