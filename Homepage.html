@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+.homepagetxt {
+    margin-right:30px;
+    margin-left:25px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(0, 25, 25);
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.bottomnav {
+    overflow: hidden;
+    background-color: rgb(25, 125, 175);
+}
+
+.bottomnav a:hover {
+    background-color: rgb(10, 110, 160);
+}
+
+.bottomnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.code {
+    color: rgb(250, 0, 100);
+    font-family: "Monaco", "Lucida Console", monospace;
+}
+
+.random {
+    padding: 6px 10px 6px 10px;
+    margin-top: 8px;
+}
+
+#rand1 {
+    position: absolute;
+    right: 125px;
+}
+#rand2 {
+    position: absolute;
+    right: 15px;
+}
+.topnav .search-container {
+  float: right;
+    margin-top:3px;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  } 
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+    <a href="Homepage.html" style="font-size:23px">The <span style="color:rgb(250, 0 , 100)" class="code">&lt;Code&gt;</span> Dictionary</a>
+
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search..." name="search">
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<div class="bottomnav">
+    <a href="HTMLHome.html">HTML</a>
+    <a href="CSSHome.html">CSS</a>
+    <a href="JavascriptHome.html">Javascript</a>
+    <a href="PythonHome.html">Python</a>
+    <a href="LearnHome.html">Learn</a>
+    <button class="random" id="rand1" onclick="Random">Random</button>
+    <button class="random" id="rand2" onclick="RandomAll">Random All</button>
+</div>
+    <div class="homepagetxt">
+        <h1>Welcome to the <span style="color:rgb(250, 0 , 100)" class="code">&lt;Code&gt;</span> Dictionary!</h1>
+        <p>Hello! We are flattered that you decided to visit us today.</p>
+        <p>Welcome to the <span style="color:rgb(250, 0 , 100)" class="code">&lt;Code&gt;</span> Dictionary, where you will learn about multiple different coding languages, including a list of all of the different tags that you can use, and how you can use them. </p>
+        <h2>How to Use this Website</h2>
+        <h3>Homepage</h3>
+        <p>Click on the words on the top of the page that read, 'The <span style="color:rgb(250, 0 , 100)" class="code">&lt;Code&gt;</span> Dictionary', and that will take you right back to the homepage. If you try it right now, it will work, but you will not notice because you are already on the homepage.</p>
+        <h3>Random + Random All buttons</h3>
+        <p>If you click the button marked 'Random', it will take you to a random tag in the coding language that you are currently on. If you click the button that says 'Random All', it will take you to a random tag within the whole entire website.</p>
+        <h3>Search Bar</h3>
+        <p>The search bar is what you can search different tags or categories in. For example, if I wanted to find the 'print' tag in Python, I would search it up using the search bar, by typing 'print' into the search bar, and pressing enter. Then it will take me to a page that will display all of the results from my query.</p>
+        <h3>HTML, CSS, Javascript and Python buttons</h3>
+        <p>The HTML, CSS, Javascript and Python buttons will lead you to all of the different tags in that coding language that we know. If you click on the HTML button, it will take you to the HTML page, where all of the different tags are listed.</p>
+        <h3>Menu</h3>
+        <p>The menu is the bar that is to the right of the page (it only shows up if you are in a coding language), and it has links to get to different categories in the coding language that you are in.</p>
+        <h3>The Learn button</h3>
+        <p>There is a button that is marked 'Learn', to the right of the button marked 'Python'. That button will take you to lesson that will be in a list of commands that you might not know. Now, if you know the tag, then there will be a button on the bottom that says 'Next &gt;', and if you didn't mean to click next, there will be a button on the other side of the page marked '&lt; Previous'.</p>
+    </div>
+</body>
+</html>
