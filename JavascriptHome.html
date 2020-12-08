@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(0, 25, 25);
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+    
+.bottomnav {
+    overflow: hidden;
+    background-color: rgb(25, 125, 175);
+}
+    
+.bottomnav a:hover {
+    background-color: rgb(10, 110, 160);
+}
+    
+.bottomnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 25px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.code {
+    color: rgb(250, 0, 100);
+    font-family: "Monaco", "Lucida Console", monospace;
+}
+  
+.random {
+    padding: 6px 10px 6px 10px;
+    margin-top: 8px;
+}
+    
+#rand1 {
+    position: absolute;
+    right: 125px;
+}    
+#rand2 {
+    position: absolute;
+    right: 15px;
+} 
+    
+.topnav .search-container {
+    float: right;
+    margin-top: 3px;
+}
+
+.topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+.topnav .search-container button {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    display: block;
+}
+
+.topnav .search-container button:hover {
+    background: #ccc;
+}
+    
+.text {
+    margin-left: 25px;
+    margin-right: 250px;
+}
+
+.topnav input[type=text] {
+    border: 1px solid #ccc;
+} 
+    
+.sidenav {
+    height: 70px;
+    width: 160px;
+    top: 25px;
+    right: 0px;
+    background-color: rgb(25, 125, 175);
+    overflow-x: hidden;
+    padding-top: 20px;
+    float: right;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    display: block;
+    text-align: center;
+}
+
+.sidenav a:hover {
+    background-color: rgb(10, 110, 160);
+}
+
+.top-link {
+    font-size: 12px;
+    color: black;
+}
+    
+.alphabet a {
+    color: black;
+}
+    
+.text button {
+    padding: 10px 97px 10px 10px;
+    
+}   
+
+.command-button-info {
+    font-size: 11px;
+}
+
+.command-button {
+    font-size: 16px;
+}
+    
+</style>
+</head>
+<body>
+
+<div class="topnav">
+    <a href="Homepage.html" style="font-size:23px">The <span style="color:rgb(250, 0 , 100)" class="code">&lt;Code&gt;</span> Dictionary</a>
+    
+<div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+    
+<div class="bottomnav">
+    <a href="HTMLHome.html">HTML</a>
+    <a href="CSSHome.html">CSS</a>
+    <a href="JavascriptHome.html">Javascript</a>
+    <a href="PythonHome.html">Python</a>
+    <a href="LearnHome.html">Learn</a>
+    <button class="random" id="rand1" onclick="Random">Random</button>
+    <button class="random" id="rand2" onclick="RandomAll">Random All</button>
+</div>
+    
+<div class="sidenav">
+  <a href="Functions">Functions</a>
+</div>
+    
+<div class="text">
+    <h1 id="Top">Javascript</h1>
+    <p>This is the javascript dictionary!</p>
+    <p>Javascript is used for user interactivity in websites. It goes hand in hand with HTML and CSS. The file ending for javascript files is .js.</p>
+    <p class="alphabet"><a href="#A">A</a> - <a href="#B">B</a> - <a href="#C">C</a> - <a href="#D">D</a> - <a href="#E">E</a> - <a href="#F">F</a> - <a href="#G">G</a> - <a href="#H">H</a> - <a href="#I">I</a> - <a href="#J">J</a> - <a href="#K">K</a> - <a href="#L">L</a> - <a href="#M">M</a> - <a href="#N">N</a> - <a href="#O">O</a> - <a href="#P">P</a> - <a href="#Q">Q</a> - <a href="#R">R</a> - <a href="#S">S</a> - <a href="#T">T</a> - <a href="#U">U</a> - <a href="#V">V</a> - <a href="#W">W</a> - <a href="#X">X</a> - <a href="#Y">Y</a> - <a href="#Z">Z</a></p>
+
+<div id="A">
+    <h2>A   <a href="#Top"><span class="top-link">Top</span></a></h2>
+    <hr>
+</div>
+    
+<div id="B">
+    <h2>B   <a href="#Top"><span class="top-link">Top</span></a></h2>
+    <hr>
+</div>
+    
+<div id="C">
+    <h2>C   <a href="#Top"><span class="top-link">Top</span></a></h2>
+    <hr>
+</div>
+    
+<div id="D">
+    <h2>D   <a href="#Top"><span class="top-link">Top</span></a></h2>
+    <hr>
+    <button class="command-button" onclick="doc.gEBIButton">document.getElementById <span class="command-button-info">Action that changes an element identified by an id</span></button>
+</div>
+    
+<div id="E">
+    <h2>E   <a href="#Top"><span class="top-link">Top</span></a></h2>
+    <hr>
+</div>
+    
+<div id="F">
+    <h2>F   <a href="#Top"><span class="top-link">Top</span></a></h2>
+    <hr>
+    <button class="command-button" onclick="FuncButton">Function <span class="command-button-info">Code that performs a task when invoked</span></button>
+</div>
+    
+<div id="G">
+    <h2>G   <a href="#Top"><span class="top-link">Top</span></a></h2>
+    <hr>
+</div>
+    
+<div id="H">
+    <h2>H   <a href="#Top"><span class="top-link">Top</span></a></h2>
+    <hr>
+</div>
+    
+<div id="I">
+    <h2>I   <a href="#Top"><span class="top-link">Top</span></a></h2>
+    <hr>
+</div>
+    
+<div id="J">
+    <h2>J   <a href="#Top"><span class="top-link">Top</span></a></h2>
+    <hr>
+</div>
+    
+<div id="K">
+    <h2>K   <a href="#Top"><span class="top-link">Top</span></a></h2>
+    <hr>
+</div>
+    
+<div id="L">
+    <h2>L   <a href="#Top"><span class="top-link">Top</span></a></h2>
+    <hr>
+</div>
+    
+<div id="M">
+    <h2>M   <a href="#Top"><span class="top-link">Top</span></a></h2>
+    <hr>
+</div>
+    
+<div id="N">
+    <h2>N   <a href="#Top"><span class="top-link">Top</span></a></h2>
+    <hr>
+</div>
+    
+<div id="O">
+    <h2>O   <a href="#Top"><span class="top-link">Top</span></a></h2>
+    <hr>
+</div>
+    
+<div id="P">
+    <h2>P   <a href="#Top"><span class="top-link">Top</span></a></h2>
+    <hr>
+</div>
+    
+<div id="Q">
+    <h2>Q   <a href="#Top"><span class="top-link">Top</span></a></h2>
+    <hr>
+</div>
+    
+<div id="R">
+    <h2>R   <a href="#Top"><span class="top-link">Top</span></a></h2>
+    <hr>
+</div>
+    
+<div id="S">
+    <h2>S   <a href="#Top"><span class="top-link">Top</span></a></h2>
+    <hr>
+</div>
+    
+<div id="T">
+    <h2>T   <a href="#Top"><span class="top-link">Top</span></a></h2>
+    <hr>
+</div>
+    
+<div id="U">
+    <h2>U   <a href="#Top"><span class="top-link">Top</span></a></h2>
+    <hr>
+</div>
+    
+<div id="V">
+    <h2>V   <a href="#Top"><span class="top-link">Top</span></a></h2>
+    <hr>
+</div>
+    
+<div id="W">
+    <h2>W   <a href="#Top"><span class="top-link">Top</span></a></h2>
+    <hr>
+</div>
+    
+<div id="X">
+    <h2>X   <a href="#Top"><span class="top-link">Top</span></a></h2>
+    <hr>
+</div>
+    
+<div id="Y">
+    <h2>Y   <a href="#Top"><span class="top-link">Top</span></a></h2>
+    <hr>
+</div>
+    
+<div id="Z">
+    <h2>Z   <a href="#Top"><span class="top-link">Top</span></a></h2>
+    <hr>
+</div>
+</div>
+    
+
+
+</body>
+</html>
